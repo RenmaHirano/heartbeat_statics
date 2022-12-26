@@ -2,7 +2,7 @@ from scipy.stats import spearmanr
 from csv import reader
 import numpy as np
 
-with open('heartbeat_affectgrid_allavedata.csv', 'r') as csv_file:
+with open('heartbeat_noHRLow.csv', 'r') as csv_file:
     csv_reader = reader(csv_file)
     # Passing the cav_reader object to list() to get a list of lists
     list_of_columns = np.array(list(csv_reader))
